@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke App</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div id="joke-container">
+        <h1>Joke</h1>
+        <p><%= joke.setup %></p>
+        <p><%= joke.delivery %></p>
+        <form id="joke-form" onsubmit="getNewJoke(); return false;">
+        <button onclick="getNewJoke()">Get New Joke</button>
+        </form>
+    </div>
+   
+    <script src="https://unpkg.com/sv443-joke-api@0.0.8/web/index.js"></script>
+  
+</body>
+</html>
